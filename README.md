@@ -4,9 +4,9 @@ Quality Treshold Clustering algorithm in java (University Project). The server f
 
 # 💻 Code
 
-<img src="media/qt3.png" align="right" width=230>
+<img src="media/qt3.png" align="right" width=200>
 
-The javadoc are included in the ```code/javadoc``` folder, all the writings, as well as comments, print statements and the User Manual are written in italian for obvious reasons.
+The javadoc are included in the ```code/javadoc``` folder, all the writings, as well as comments, print statements, Uml and the User Manual are written in italian for obvious reasons.
 
 To run the project, simply execute the start.bat file located in the executables folder. This script will:
 
@@ -16,11 +16,11 @@ To run the project, simply execute the start.bat file located in the executables
 
 - Generate a dedicated account for the algorithm.
 
-Once the database setup is complete, two terminals will open: Server terminal (running on port 8080), and Client terminal, which is the main interface for user interaction. In the client terminal, you will be prompted with two options:
+Once the database setup is complete, two terminals will open: Server terminal (running on port 8080), and Client terminal, which is the main interface for user interaction, here you will be prompted with two options:
 
 <img src="media/qt1.png" align="right" width=280>
 
-- Load data from the database.
+- Load data from the database (remember to add Mysql library when building the project).
 
 - Load clusters from a file.
 
@@ -32,7 +32,7 @@ This operation will calculate clusters using data from a database. Here is the f
 
 - After successfully loading the data, the terminal will ask you to enter a radius, which will be used to compute the clusters;
 
-- The calculated clusters (including their centroids) will then be displayed. You will also be asked whether you want to repeat the operation with a new radius;
+- The calculated clusters (including their centroids) will then be displayed, you will also be asked whether you want to repeat the operation with a new radius;
 
 - If you type n, the program will prompt you to provide a filename under which the clusters will be saved; 
 
@@ -40,28 +40,37 @@ This operation will calculate clusters using data from a database. Here is the f
 
 You can use any extension you want for the filename, although "dmp" is preferred.
 
-<img src="media/qt2.png" width=450>
+<img src="media/qt2.png" width=480>
 
 ### 2) Load Clusters from File
 
-This operation will display pre-calculated clusters from a file:
+This operation allows you to display pre-calculated clusters from a file:
 
-- Type the file name with extension;
+- Enter the filename (including extension);
 
-- The clusters (centroids) will be displayed;
+- The clusters (with their centroids) will be displayed;
 
-- Then it will ask whether you want to perform another operation or exit the application.
+- You will then be asked whether you want to perform another operation or exit.
 
-If you choose to perform another operation you will be prompted back to the menu, otherwise the client terminal will close. The server will of course still remain active.
+If you choose to continue, you will be returned to the main menu, otherwise, the client terminal will close, while the server will remain active.  
 
 # 📊 Clustering Algorithm
 
-<img src="media/" align="right" width=200>
+<img src="media/qte2.png" align="right" width=300>
 
-The algorithm is a quality treshold clustering algorithm, it works like this:
+The algorithm is a Quality Threshold clustering algorithm, here's a brief explanation of how it works:
 
--
--
--
--
+- For each point in the dataset, form a candidate cluster by including all points within the specified radius;
+
+- Compute the centroid of the candidate cluster and measure its "quality";
+
+- Select the cluster with the best quality and remove its points from the dataset;
+
+- Repeat the process on the remaining points until no further clusters can be formed;
+
+- The result is a set of non-overlapping clusters, each defined by its centroid and the points assigned to it.  
+
+<img src="media/qte1.png" align="left" width=270>
+
+This was a project for the Advanced Programming (Map) Exam, these images are taken from the teacher's slides packet.
 
