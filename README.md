@@ -1,6 +1,8 @@
 # Quality Treshold clustering Algorithm
 
-Quality Treshold Clustering algorithm in java (University Project). The server fetches data from a database, calculates clusters given a radius and saves them on a file. Collaborators: [@CiciStefanoUniba](https://github.com/CiciStefanoUniba) and [@Antob0906](https://github.com/Antob0906)
+Quality Treshold Clustering algorithm in java (University Project). The server fetches data from a database, calculates clusters given a radius and saves them on a file. 
+
+Collaborators: [@CiciStefanoUniba](https://github.com/CiciStefanoUniba) and [@Antob0906](https://github.com/Antob0906)
 
 # 💻 Code
 
