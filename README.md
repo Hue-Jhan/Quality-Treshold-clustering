@@ -6,7 +6,7 @@ Quality Treshold Clustering algorithm in java (University Project). The server f
 
 <img src="media/qt3.png" align="right" width=200>
 
-The javadoc are included in the ```code/javadoc``` folder, all the writings, as well as comments, print statements, Uml and the User Manual are written in italian for obvious reasons.
+The javadoc are included in the ```code/javadoc``` folder, all the writings, as well as comments, print statements, Uml and the User Manual are written in italian for obvious reasons. Some of the generics (eg. discrete attr) are wrong, also the UML project has many errors.
 
 To run the project, simply execute the start.bat file located in the executables folder. This script will:
 
